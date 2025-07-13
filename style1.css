@@ -1,0 +1,49 @@
+ @font-face {
+     font-family: ClashDisplay;
+     src: url(ClashDisplay-Medium.otf);
+ }
+
+ @font-face {
+     font-family: ClashBold;
+     src: url(ClashDisplay-Bold.otf);
+ }
+
+ * {
+     font-family: ClashDisplay;
+     scroll-behavior: smooth;
+ }
+
+ h1 {
+     font-family: ClashBold;
+ }
+
+ section{
+    height: 100vh;
+ }
+
+
+ .gradiant{
+    position: relative;
+    
+ }
+
+ .circle{
+    width: 250px;
+    height: 120px;
+    border-radius: 50%;
+    position: absolute;
+
+
+ }
+
+ .c2{
+    margin-top: 40px;
+    z-index: -4;
+    background-color: #edeb9e;
+ }
+.c1{
+    z-index: -3;
+background: radial-gradient(#e8710f,#ffffff00);}
+
+
+
