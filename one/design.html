@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+         <link rel="stylesheet" href="style.css">
+
+        <style type="text/tailwindcss">
+         @theme {
+           --color-primery: #FFFFFF;
+           --color-secondery:#000;
+           --color-txt:#fff;
+           --color-orange:#FF5555;
+         }
+       </style>
+
+
+    
+
+</head>
+<body class="bg-primery  relative">
+
+
+  <!-- <div id="blur" class="w-[100%] h-full absolute"></div> -->
+   
+
+  <section class="" id="home">
+
+    <header class=" w-[100%] flex md:h-12 md:flex-row md:items-center relative     items-start  flex-col ">
+
+      <div class="w-[15%]">
+    <img  class="w-[140px] md:h-full h-[30px]" src="../images/Group.png" alt="logo">
+      </div>
+
+
+
+    <nav class="w-[70%]" >
+      <ul id="list" class="w-[100%] hidden  gap-4  flex-col md:flex-row md:px-5 py-8 md:py-0 md:flex">
+        <li class=""><a href="">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#faq">Princing</a></li>
+        <li><a href="#features">Features</a></li>
+      </ul>
+    </nav>
+
+
+    <div class="absolute right-0 md:hidden" >
+        <i id="open-btn" class="fa-solid fa-bars text-[20px] cursor-pointer visible " onclick="navOpen() " ></i>
+         <i id="close-btn" class="fa-solid fa-square-xmark text-[20px] cursor-pointer invisible" onclick="navClose()"></i>
+    </div>
+
+
+
+    <div class="w-[15%] h-12 md:flex hidden justify-end">
+    <button class="w-[75%]  rounded text-primery bg-black "> <a href="#download">Download</a></button>
+    </div>
+
+    </header>
+
+
+    <div class="md:flex  w-[100%]">
+
+
+    <aside class=" md:w-[500px] md:mt-10 mt-30 flex flex-col gap-[15px]">
+
+      <div class="gradiant">
+        <div class="circle c1"></div>
+        <div class="circle c2"></div>
+      </div>
+
+
+
+      <h1 class="text-[44px]  leading-none font-[400] ">Make The Best <br> Financial Decisions</h1>
+
+      <p class=" md:w-100 w-70 text-[#6e696980]">Cum et convallis risus placerat aliquam, nunc
+        Scelerisque aliquet faucibus tincidunt eu Adipiscing sociis arcu lorem porttitor.
+      </p>
+
+      <div class="">
+        <button class="w-[130px] h-[50px] bg-black rounded text-primery">Get Started &#8594;</button>
+
+        
+
+       <a class="ml-5" href=""> Watch Video</a>
+
+      </div>
+
+
+            <img width="360px" class="hidden md:flex" src="../images/Group 35924.png" alt="">
+
+
+    </aside>
+    
+
+
+    <div class="md:h-auto h-100 hidden md:flex">
+
+      <img src="../images/drop-lines.png" class="w-100 ml-0 md:ml-10 absolute z-0" alt="">
+
+      <div class=" absolute md:w-1/7 w-1/4 rotate-352 mt-5 ml-5 z-5">
+          <img src="../images/phone-none-rotate.png" alt="">
+      </div>
+
+      
+      <div class=" absolute md:w-1/7 w-1/4 rotate-352 mt-15 ml-25 z-4">
+          <img src="../images/phone-none-rotate.png" alt="">
+      </div>
+
+      
+      <div class=" absolute md:w-1/7 w-1/4 rotate-352 mt-25 ml-45 z-3">
+          <img src="../images/phone-none-rotate.png" alt="">
+      </div>
+
+    </div>
+
+
+    </div>
+
+  </section>
+  
+
+
+
+  <section class="grid md:grid-cols-2 grid-rows-2 mt-25" id="features">
+
+    <div class=" flex items-center justify-center  ">
+      <img  src="../images/drop-lines.png" class=" md:w-90 mt-20  w-80  absolute z-0" alt="">
+      <img  src="../images/phone-none-rotate.png" class=" md:w-42  w-38 mt-28 z-1 absolute" alt="">
+    </div>
+
+
+
+
+
+    <div class=" flex flex-col gap-[30px] md:w-[400px]">
+
+
+      <div class="">
+        <h2 class="text-orange">Features</h2>
+        <h1 class="text-[34px]">UifryPremium</h1>
+      </div>
+
+      <div class="">
+        <h2 class="flex"> <img class="w-[18px] h-[18px]" src="../images/Icon (1).png" alt="icon">&nbsp; &nbsp; Budgeting intervals</h2>
+        <p class="text-[12px] text-secondery opacity-50">Cum et convallis risus placerat aliquam, nunc
+        Scelerisque aliquet faucibus tincidunt eu Adipiscing sociis arcu lorem porttitor.</p>
+      </div>
+
+      <div class="">
+        <h2 class="flex"> <img class="w-[18px] h-[18px]" src="../images/Icon (2).png" alt="icon">&nbsp; &nbsp; Budgeting intervals</h2>
+        <p class="text-[12px] text-secondery opacity-50">Cum et convallis risus placerat aliquam, nunc
+        Scelerisque aliquet faucibus tincidunt eu Adipiscing sociis arcu lorem porttitor.</p>
+      </div> 
+      
+      <div class="">
+        <h2 class="flex"> <img class="w-[18px] h-[18px]" src="../images/Icon (3).png" alt="icon">&nbsp; &nbsp; Budgeting intervals</h2>
+        <p class="text-[12px] text-secondery opacity-50">Cum et convallis risus placerat aliquam, nunc
+        Scelerisque aliquet faucibus tincidunt eu Adipiscing sociis arcu lorem porttitor.</p>
+      </div> 
+
+      
+
+      
+    </div>
+    
+  </section>
+
+
+
+  <section class="grid md:grid-cols-2" id="">
+    
+
+    <div class="h-full flex flex-col align-center">
+
+      
+      <div class="md:mt-35  mt-40">
+        <h2 class="text-orange">Advantages</h2>
+        <h1 class="text-[34px]">Why Choose Uifry</h1>
+      </div>
+
+      <div class="">
+        <h3 class="flex text-[25px]"><span class="w-[35px] h-[35px] rounded-[50%] bg-[#FF5555]"> <img width="18px" src="imgs/bell-02 (1).png" alt="icon" class="m-auto mt-2"> </span> &nbsp; Clever Notifications</h3>
+        <p class="opacity-50">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+           Temporibus assumenda error quae accusamus, in ad? Sunt, 
+           accusamus ut explicabo quam in repudiandae ab blanditiis 
+           porro quia earum praesentium. Iure, neque?
+        </p>
+      </div>
+
+
+    </div>
+
+
+
+
+
+    <div class=" flex items-center justify-center  ">
+      <img  src="../images/drop-lines.png" class=" md:w-90   w-80  absolute z-0" alt="">
+      <img  src="../images/phone-none-rotate.png" class=" md:w-42  w-38  z-1 absolute" alt="">
+    </div>
+
+  </section>
+
+
+  
+  <section class="grid md:grid-cols-2" id="">
+    
+
+
+    
+      
+    <div class=" flex items-center justify-center  ">
+      <img  src="../images/drop-lines.png" class=" md:w-90   w-80  absolute z-0" alt="">
+      <img  src="../images/phone-none-rotate.png" class=" md:w-42  w-38  z-1 absolute" alt="">
+    </div>
+
+
+
+    <div class="h-full flex items-center">
+
+
+
+      
+
+      <div class=" ">
+        <h3 class="flex text-[25px]"><span class="w-[35px] h-[35px] rounded-[50%] bg-[#FF5555]"> <img width="18px" src="imgs/star-05.png" alt="icon" class="m-auto mt-2"> </span> &nbsp; Fully customizable</h3>
+        <p class="opacity-50">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+           Temporibus assumenda error quae accusamus, in ad? Sunt, 
+           accusamus ut explicabo quam in repudiandae ab blanditiis 
+           porro quia earum praesentium. Iure, neque?
+        </p>
+      </div>
+
+
+    </div>
+
+  </section>
+
+
+
+
+
+  <section class="" id="about">
+
+
+    <div class="w-full h-25  flex flex-col justify-center items-center">
+      <p>TESTEMONIAL</p>
+      <h1 class="text-4xl text-center">What Our Users <br> Uay About Us?</h1>
+    </div>
+
+
+    <div class=" flex">
+
+
+      <div class="w-[50%]">
+        <img src="imgs/Group 1000002332.png" class="w-full" alt="">
+      </div>
+
+
+      <div class="w-[50%] flex flex-col gap-4 m-auto">
+
+        <h1 class="text-2xl">The Best Financial Accounting <br> App Ever!</h1>
+
+        <p class="opacity-50">
+          “Arcu at dictum sapien, mollis. Vulputate sit id accumsan, 
+          ultricies. In ultrices malesuada elit mauris etiam odio.
+           Duis tristique lacus, et blandit viverra nisl velit.
+            Sed mattis rhoncus, diam suspendisse sit nunc, 
+            gravida eu. Lectus eget eget ac dolor neque lorem sapien,
+             suspendisse aliquam.”
+        </p>
+
+        <img width="150px" src="imgs/Group 35917.png" alt="">
+
+        <h3>Nick Jonas</h3>
+
+      </div>
+
+
+    </div>
+
+
+  </section>
+
+
+
+  <section class="" id="faq">
+
+    <div>
+      <a href="" class="text-orange">FAQ</a>
+      <h1 class="text-2xl">Frequently Asked <br> Questions</h1>
+    </div>
+
+
+    <div class="flex flex-wrap gap-4 mt-2" >
+
+      <div class="rounded bg-orange p-5 w-[47%]">
+        <h2 class="text-primery">The Best Financial Accounting <br>  App Ever!</h2>
+        <p>
+          “Arcu at dictum sapien, mollis. Vulputate sit id accumsan,
+           ultricies. In ultrices malesuada elit mauris.
+        </p>
+      </div>
+
+      <div class="rounded p-5 w-[47%]">
+        <h2 class="text-primery">The Best Financial Accounting <br>  App Ever!</h2>
+        <p>
+          “Arcu at dictum sapien, mollis. Vulputate sit id accumsan,
+           ultricies. In ultrices malesuada elit mauris.
+        </p>
+      </div>
+
+      <div class="rounded  p-5 w-[47%]">
+        <h2 class="text-primery">The Best Financial Accounting <br>  App Ever!</h2>
+        <p>
+          “Arcu at dictum sapien, mollis. Vulputate sit id accumsan,
+           ultricies. In ultrices malesuada elit mauris.
+        </p>
+      </div>
+
+
+      <div class="rounded bg-orange p-5 w-[47%]">
+        <h2 class="text-primery">The Best Financial Accounting <br>  App Ever!</h2>
+        <p>
+          “Arcu at dictum sapien, mollis. Vulputate sit id accumsan,
+           ultricies. In ultrices malesuada elit mauris.
+        </p>
+      </div>
+
+
+      <div class="rounded bg-orange p-5 w-[47%]">
+        <h2 class="text-primery">The Best Financial Accounting <br>  App Ever!</h2>
+        <p>
+          “Arcu at dictum sapien, mollis. Vulputate sit id accumsan,
+           ultricies. In ultrices malesuada elit mauris.
+        </p>
+      </div>
+
+      <div class="rounded  p-5 w-[47%]">
+        <h2 class="text-primery">The Best Financial Accounting <br>  App Ever!</h2>
+        <p>
+          “Arcu at dictum sapien, mollis. Vulputate sit id accumsan,
+           ultricies. In ultrices malesuada elit mauris.
+        </p>
+      </div>
+
+
+    </div>
+
+  </section>
+
+
+  <section class=" flex items-center" id="download">
+
+    <div class="h-[70%] w-full rounded bg-black
+
+    bg-[url(imgs/bleft.png),url(imgs/phones.png),url(imgs/tright.png)] 
+    bg-no-repeat
+    bg-[position:left_bottom,right_0px_top_20px,_right_top]
+    bg-[length:392px,_392px,_340px]">
+
+         <div class="flex flex-col gap-2 pl-[5%] py-[10%]">
+         <h1 class="text-primery text-4xl">Redy To Get Started?</h1>
+         <p class="text-primery font-thin opacity-70">Risus habitant leo egestas mauris diam eget morbi tempus <br> vulputate.</p>
+
+         <button class="px-5 cursor-pointer py-4 bg-primery rounded flex items-center w-[15%]"> Download &nbsp; &nbsp; <img width="16px" src="imgs/Vector.png" alt=""></button>
+
+         </div>
+
+    </div>
+
+  </section>
+
+
+  <script src="script.js"></script>
+
+</body>
+</html>

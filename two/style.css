@@ -1,0 +1,19 @@
+
+ @font-face {
+     font-family:myfont;
+     src: url(Gilroy-Bold.ttf);
+ }
+
+ 
+ @font-face {
+     font-family:glori;
+     src: url(Gilroy-Medium.ttf);
+ }
+
+
+ * {
+     /* font-family:myfont; */
+     font-family:glori;
+     scroll-behavior: smooth;
+     color: aliceblue;
+ }

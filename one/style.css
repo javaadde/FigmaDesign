@@ -19,6 +19,9 @@
 
  section{
     height: 100vh;
+    padding: 12px;
+    padding-left: 8%;
+    padding-right: 8%;
  }
 
 
@@ -40,10 +43,19 @@
     margin-top: 40px;
     z-index: -4;
     background-color: #edeb9e;
+    filter: blur(35.5773px);
+
  }
 .c1{
     z-index: -3;
-background: radial-gradient(#e8710f,#ffffff00);}
+    background: #FF5555;
+    filter: blur(32.5773px);
+    background-image:  
+    url(https://grainy-gradients.vercel.app/noise.svg);
+}
 
 
-
+/* 
+#blur{
+    background-image: url(Rectangle.png);
+} */
