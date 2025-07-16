@@ -31,14 +31,14 @@
 
     <header class=" w-[100%] flex md:h-12 md:flex-row md:items-center relative     items-start  flex-col ">
 
-      <div class="w-[15%]">
+      <div class="w-[15%] hidden md:flex ">
     <img  class="w-[140px] md:h-full h-[30px]" src="../images/Group.png" alt="logo">
       </div>
 
 
 
     <nav class="w-[70%]" >
-      <ul id="list" class="w-[100%] hidden  gap-4  flex-col md:flex-row md:px-5 py-8 md:py-0 md:flex">
+      <ul id="list" class="w-[100%] hidden  gap-4   flex-col md:flex-row md:px-5 py-8 md:py-0 md:flex">
         <li class=""><a href="">Home</a></li>
         <li><a href="#about">About Us</a></li>
         <li><a href="#faq">Princing</a></li>
@@ -47,15 +47,15 @@
     </nav>
 
 
-    <div class="absolute right-0 md:hidden" >
-        <i id="open-btn" class="fa-solid fa-bars text-[20px] cursor-pointer visible " onclick="navOpen() " ></i>
-         <i id="close-btn" class="fa-solid fa-square-xmark text-[20px] cursor-pointer invisible" onclick="navClose()"></i>
+    <div class="absolute right-0 md:hidden relative" >
+        <i id="open-btn" class="fa-solid fa-bars text-[20px] cursor-pointer visible absolute" onclick="navOpen() " ></i>
+         <i id="close-btn" class="fa-solid fa-square-xmark text-[20px] cursor-pointer invisible absolute" onclick="navClose()"></i>
     </div>
 
 
 
     <div class="w-[15%] h-12 md:flex hidden justify-end">
-    <button class="w-[75%]  rounded text-primery bg-black "> <a href="#download">Download</a></button>
+    <button class="w-[20vw]  rounded text-primery bg-black "> <a href="#download">Download</a></button>
     </div>
 
     </header>
@@ -73,7 +73,7 @@
 
 
 
-      <h1 class="text-[44px]  leading-none font-[400] ">Make The Best <br> Financial Decisions</h1>
+      <h1 class="md:text-[44px] text-4xl  leading-none font-[400] ">Make The Best <br> Financial Decisions</h1>
 
       <p class=" md:w-100 w-70 text-[#6e696980]">Cum et convallis risus placerat aliquam, nunc
         Scelerisque aliquet faucibus tincidunt eu Adipiscing sociis arcu lorem porttitor.
@@ -89,14 +89,14 @@
       </div>
 
 
-            <img width="360px" class="hidden md:flex" src="../images/Group 35924.png" alt="">
+            <img width="360px" class=" md:flex" src="../images/Group 35924.png" alt="">
 
 
     </aside>
     
 
 
-    <div class="md:h-auto h-100 hidden md:flex">
+    <div class="md:h-auto h-100 hidden lg:flex">
 
       <img src="../images/drop-lines.png" class="w-100 ml-0 md:ml-10 absolute z-0" alt="">
 
@@ -124,11 +124,11 @@
 
 
 
-  <section class="grid md:grid-cols-2 grid-rows-2 mt-25" id="features">
+  <section class="grid md:grid-cols-2 grid-rows-2 mt-5" id="features">
 
-    <div class=" flex items-center justify-center  ">
-      <img  src="../images/drop-lines.png" class=" md:w-90 mt-20  w-80  absolute z-0" alt="">
-      <img  src="../images/phone-none-rotate.png" class=" md:w-42  w-38 mt-28 z-1 absolute" alt="">
+    <div class=" flex items-center justify-center ">
+      <img  src="../images/drop-lines.png" class=" md:w-90   w-80  absolute z-0" alt="">
+      <img  src="../images/phone-none-rotate.png" class=" md:w-42  w-38  z-1 absolute" alt="">
     </div>
 
 
@@ -170,7 +170,7 @@
 
 
 
-  <section class="grid md:grid-cols-2" id="">
+  <section class="h-auto grid grid-rows-2 md:grid-cols-2" id="">
     
 
     <div class="h-full flex flex-col align-center">
@@ -178,11 +178,11 @@
       
       <div class="md:mt-35  mt-40">
         <h2 class="text-orange">Advantages</h2>
-        <h1 class="text-[34px]">Why Choose Uifry</h1>
+        <h1 class="text-4xl  ">Why Choose Uifry</h1>
       </div>
 
       <div class="">
-        <h3 class="flex text-[25px]"><span class="w-[35px] h-[35px] rounded-[50%] bg-[#FF5555]"> <img width="18px" src="imgs/bell-02 (1).png" alt="icon" class="m-auto mt-2"> </span> &nbsp; Clever Notifications</h3>
+        <h3 class="flex text-2xl mt-5 whitespace-nowrap"><span class="w-[35px] h-[35px] rounded-[50%] bg-[#FF5555]"> <img width="18px" src="imgs/bell-02 (1).png" alt="icon" class="m-auto mt-2"> </span> &nbsp; Clever Notifications</h3>
         <p class="opacity-50">
           Lorem ipsum dolor sit amet consectetur adipisicing elit.
            Temporibus assumenda error quae accusamus, in ad? Sunt, 
@@ -198,7 +198,7 @@
 
 
 
-    <div class=" flex items-center justify-center  ">
+    <div class=" flex items-center justify-center ">
       <img  src="../images/drop-lines.png" class=" md:w-90   w-80  absolute z-0" alt="">
       <img  src="../images/phone-none-rotate.png" class=" md:w-42  w-38  z-1 absolute" alt="">
     </div>
@@ -207,13 +207,13 @@
 
 
   
-  <section class="grid md:grid-cols-2" id="">
+  <section class="h-auto grid md:grid-cols-2 grid-rows-1 w-auto" id="">
     
 
 
     
       
-    <div class=" flex items-center justify-center  ">
+    <div class=" flex items-center justify-center  hidden md:flex">
       <img  src="../images/drop-lines.png" class=" md:w-90   w-80  absolute z-0" alt="">
       <img  src="../images/phone-none-rotate.png" class=" md:w-42  w-38  z-1 absolute" alt="">
     </div>
@@ -243,28 +243,30 @@
 
 
 
+      <section class="h-[20vh]"></section>
 
 
-  <section class="" id="about">
+
+  <section class="h-auto md:mt-30" id="about">
 
 
     <div class="w-full h-25  flex flex-col justify-center items-center">
       <p>TESTEMONIAL</p>
-      <h1 class="text-4xl text-center">What Our Users <br> Uay About Us?</h1>
+      <h1 class="text-4xl text-center">What Our Users <br> Say About Us?</h1>
     </div>
 
 
     <div class=" flex">
 
 
-      <div class="w-[50%]">
+      <div class="w-[50%] hidden md:flex">
         <img src="imgs/Group 1000002332.png" class="w-full" alt="">
       </div>
 
 
-      <div class="w-[50%] flex flex-col gap-4 m-auto">
+      <div class="md:w-[50%] flex flex-col gap-4 md:m-auto mt-12">
 
-        <h1 class="text-2xl">The Best Financial Accounting <br> App Ever!</h1>
+        <h1 class="md:text-2xl text-xl">The Best Financial Accounting <br> App Ever!</h1>
 
         <p class="opacity-50">
           “Arcu at dictum sapien, mollis. Vulputate sit id accumsan, 
@@ -288,8 +290,11 @@
   </section>
 
 
+    <section class="h-[20vh]"></section>
 
-  <section class="" id="faq">
+
+
+  <section class="h-auto" id="faq">
 
     <div>
       <a href="" class="text-orange">FAQ</a>
@@ -354,27 +359,30 @@
 
   </section>
 
+      <section class="h-[20vh]"></section>
 
-  <section class=" flex items-center" id="download">
+
+  <section class="flex items-center" id="download">
 
     <div class="h-[70%] w-full rounded bg-black
 
     bg-[url(imgs/bleft.png),url(imgs/phones.png),url(imgs/tright.png)] 
     bg-no-repeat
     bg-[position:left_bottom,right_0px_top_20px,_right_top]
-    bg-[length:392px,_392px,_340px]">
+    bg-[length:392px,_362px,_330px]">
 
          <div class="flex flex-col gap-2 pl-[5%] py-[10%]">
          <h1 class="text-primery text-4xl">Redy To Get Started?</h1>
          <p class="text-primery font-thin opacity-70">Risus habitant leo egestas mauris diam eget morbi tempus <br> vulputate.</p>
 
-         <button class="px-5 cursor-pointer py-4 bg-primery rounded flex items-center w-[15%]"> Download &nbsp; &nbsp; <img width="16px" src="imgs/Vector.png" alt=""></button>
+         <button class=" cursor-pointer py-4 bg-primery rounded flex text-center items-center justify-center w-[18vw]"> Download &nbsp; &nbsp; <img width="16px" src="imgs/Vector.png" alt=""></button>
 
          </div>
 
     </div>
 
   </section>
+
 
 
   <script src="script.js"></script>
