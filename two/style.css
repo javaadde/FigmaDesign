@@ -27,10 +27,17 @@
     display: none;
  }
 
+ #open{
+    display: none;
+ }
+
 
  @media (max-width:767px) {
     #close{
         display: flex;
+    }
+    #open{
+        display: block;
     }
  }
 
