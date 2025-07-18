@@ -1,78 +1,981 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
 
-        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
 
 
 
 
 
-        <style type="text/tailwindcss">
-            @theme {
+    <style type="text/tailwindcss">
+        @theme {
                            --color-primery: #FFFFFF;
                            --color-secondery:#000;
                            --color-txt:#fff;
                            --color-orange:#FF5555;
+                           --color-clifford:#E58411;
                          }
          </style>
 
 
 </head>
+
 <body>
 
 
-    <section class=" bg-[url(imgs/bg.png)] bg-no-repeat bg-cover bg-center h-[150vh]" id="home">
+    <section class=" bg-[url(imgs/bg.png)] bg-no-repeat bg-cover bg-center h-[150vh] text-white" id="home">
 
-        <header class="w-full h-12 flex items-center px-16">
+        <header id="logo" class="w-full h-12 flex items-center md:px-16 px-5 relative">
 
             <h3 alt="logo" class="w-[20%] text-[22px] font-bold">Panto</h3>
 
-            <nav class="w-[60%] flex justify-center"> 
-               <ul class="flex gap-10 ">
-                <li>Pictures</li>
-                <li>Shop</li>
-                <li>About us</li>
-                <li>Contact</li>
-               </ul> 
+            <nav id="navBar" class="w-[90%] fixed hidden mt-85 justify-center items-center backdrop-blur-3xl z-99 rounded
+                                 md:w-[60%] md:backdrop-blur-[0px]  md:block   md:static md:mt-0">
+
+
+                <i id="close" class="fa-solid fa-rectangle-xmark cursor-pointer 
+                                    md:hidden"></i>
+
+
+                <ul class="flex flex-col gap-6 justify-center p-5 text-center mb-10
+                          md:flex-row md:mb-0 md:p-0">
+                    <li><a href="#Experience">Pictures</a></li>
+                    <li><a href="">Shop</a></li>
+                    <li><a href="">About us</a></li>
+                    <li><a href="">Contact</a></li>
+
+                </ul>
+
             </nav>
 
 
-            <div class="w-[20%] flex justify-end">
-            <img width="28px" src="imgs/Bag.png" alt="cart">
+            <div class="w-[20%] flex justify-end absolute right-5 md:right-16">
+                <img width="28px" src="imgs/Bag.png" alt="cart">
             </div>
 
         </header>
 
         <main class="w-full flex justify-center items-center flex-col mt-20">
- 
-           <h1 class="text-6xl text-center font-bold leading-normal">
-               Make Your Interior More <br>
-               Minimalistic & Modern
+
+            <h1 class="md:text-6xl text-4xl text-center font-bold leading-normal">
+                Make Your Interior More <br>
+                Minimalistic & Modern
             </h1>
 
-            <p class="mt-5 text-center">
-               Turn your room with panto into a lot more minimalist <br> and modern with ease and speed
+            <p class="mt-5 text-center inline-block">
+                Turn your room with panto into a lot more minimalist <br> and modern with ease and speed
             </p>
 
             <div class="relative">
-            <input type="text" placeholder="&nbsp; &nbsp; &nbsp; Search Furniture" class="mt-5 border  rounded-full w-65 h-12 backdrop-blur-3xl ">
+                <input type="text" placeholder="&nbsp; &nbsp; &nbsp; Search Furniture"
+                    class="mt-5 border  rounded-full w-65 h-12 backdrop-blur-3xl ">
+
+                <div class="absolute right-[5px] top-[25px] ">
+                    <button class=""><img width="38px" src="imgs/Frame 48095395 (1).png" alt=""></button>
+                </div>
+
             </div>
 
-            
+
+
 
 
         </main>
 
 
     </section>
+
+    <section>
+        <div id="nosection" class="w-full  h-auto mt-10 flex md:flex-row flex-wrap gap-10 px-15 py-[15vh] ">
+
+            <div class=" w-[50%] w-full items-center flex lg:w-[18%]">
+                <h2 class="md:text-2xl text-3xl">Why <br>Choosing Us</h2>
+            </div>
+
+            <div class="md:w-[22%] w-full flex flex-col gap-4">
+                <h3 class="text-xl font-bold">Luxuary facilities</h3>
+                <p class="">
+                    The advantage of hiring a workspace with us
+                    is that givees you comfortable service and all-around facilities.
+                </p>
+                <a href="" class="text-clifford">More info &nbsp;&nbsp; &#8594;</a>
+            </div>
+
+            <div class="md:w-[22%] w-full flex flex-col gap-4">
+                <h3 class="text-xl font-bold">Luxuary facilities</h3>
+                <p class="">
+                    The advantage of hiring a workspace with us
+                    is that givees you comfortable service and all-around facilities.
+                </p>
+                <a href="" class="text-clifford"> More info &nbsp;&nbsp; &#8594;</a>
+            </div>
+
+
+            <div class="md:w-[22%] w-full flex flex-col gap-4">
+                <h3 class="text-xl font-bold">Luxuary facilities</h3>
+                <p class="">
+                    The advantage of hiring a workspace with us
+                    is that givees you comfortable service and all-around facilities.
+                </p>
+                <a href="" class="text-clifford">More info &nbsp;&nbsp; &#8594;</a>
+            </div>
+
+
+
+        </div>
+    </section>
+
+
+    <section class="h-auto w-[100%] flex justify-center flex-col items-center bg-[#F7F7F7]">
+
+        <div class="w-full h-[20vh]  flex justify-center items-center">
+            <h1 class="text-3xl font-bold">Best Selling Product</h1>
+        </div>
+
+        <div class="name-cont w-full flex justify-center ">
+            <div class="bg-[#EEEEEE] px-2 py-2  rounded-full ">
+                <span id="Chair" class="px-3 py-1 rounded-full cursor-pointer bg-[#FFFFFF]  z-3">Chair</span>
+                <span id="Bed" class="px-3 py-1 rounded-full cursor-pointer " onclick="checkSlide();">Bed</span>
+                <span id="Sofa" class="px-3 py-1 rounded-full cursor-pointer ">Sofa</span>
+                <span id="Lamp" class="px-3 py-1 rounded-full cursor-pointer ">Lamp</span>
+            </div>
+        </div>
+
+
+
+        <div class="card-cont p-15 flex gap-6   swiper">
+
+
+        
+            <div class="desk-slider hidden!
+                        lg:flex!">
+            <div class="swiper-wrapper py-15 ">
+
+
+                <div class="swiper-slide flex gap-6 ">
+
+                    <div class="w-[200px] Card ">
+
+                        <div class="w-[200px] h-[250px] 
+                                        bg-[url(imgs/chairs/1.png)] bg-contain bg-no-repeat">
+
+                        </div>
+
+
+                        <div class="p-5 bg-[#FFFFFF] rounded-b-lg">
+
+                            <div>
+                                <p class="opacity-50">chair</p>
+                                <h2>Sakarias Armchair</h2>
+                                <p class="text-sm text-[#F6B76F]">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </p>
+                            </div>
+
+
+                            <div class="flex mt-7">
+                                <h3> $369 </h3>
+                                <span class="w-[22px] h-[22px] rounded-full bg-black text-primery
+                                     flex justify-center items-center cursor-pointer ml-[60%] ">+</span>
+                            </div>
+
+
+                        </div>
+
+
+                    </div>
+
+                    <div class="w-[200px] Card ">
+
+                        <div class="w-[200px] h-[250px] 
+                                        bg-[url(imgs/chairs/2.png)] bg-contain bg-no-repeat">
+
+                        </div>
+
+
+                        <div class="p-5 bg-[#FFFFFF] rounded-b-lg">
+
+                            <div>
+                                <p class="opacity-50">chair</p>
+                                <h2>Baltsar Chair</h2>
+                                <p class="text-sm text-[#F6B76F]">
+
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </p>
+                            </div>
+
+
+                            <div class="flex mt-7">
+                                <h3> $299 </h3>
+                                <span class="w-[22px] h-[22px] rounded-full bg-black text-primery
+                                     flex justify-center items-center cursor-pointer ml-[60%] ">+</span>
+                            </div>
+
+
+                        </div>
+
+
+                    </div>
+
+
+                    <div class="w-[200px] Card ">
+
+                        <div class="w-[200px] h-[250px] 
+                                        bg-[url(imgs/chairs/3.png)] bg-contain bg-no-repeat">
+
+                        </div>
+
+
+                        <div class="p-5 bg-[#FFFFFF] rounded-b-lg">
+
+                            <div>
+                                <p class="opacity-50">chair</p>
+                                <h2>Sakarias Armchair</h2>
+                                <p class="text-sm text-[#F6B76F]"> <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </p>
+                            </div>
+
+
+                            <div class="flex mt-7">
+                                <h3> $369 </h3>
+                                <span class="w-[22px] h-[22px] rounded-full bg-black text-primery
+                                     flex justify-center items-center cursor-pointer ml-[60%] ">+</span>
+                            </div>
+
+
+                        </div>
+
+
+                    </div>
+
+                    <div class="w-[200px] Card ">
+
+                        <div class="w-[200px] h-[250px] 
+                                        bg-[url(imgs/chairs/4.png)] bg-contain bg-no-repeat">
+
+                        </div>
+
+
+                        <div class="p-5 bg-[#FFFFFF] rounded-b-lg">
+
+                            <div>
+                                <p class="opacity-50">chair</p>
+                                <h2>Sakarias Armchair</h2>
+                                <p class="text-sm text-[#F6B76F]"> <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </p>
+                            </div>
+
+
+                            <div class="flex mt-7">
+                                <h3> $369 </h3>
+                                <span class="w-[22px] h-[22px] rounded-full bg-black text-primery
+                                     flex justify-center items-center cursor-pointer ml-[60%] ml-[60%]">+</span>
+                            </div>
+
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="swiper-slide">
+
+                    <div class="w-[200px] Card ">
+
+                        <div class="w-[200px] h-[250px] 
+                                        bg-[url(imgs/chairs/1.png)] bg-contain bg-no-repeat">
+
+                        </div>
+
+
+                        <div class="p-5 bg-[#FFFFFF] rounded-b-lg">
+
+                            <div>
+                                <p class="opacity-50">chair</p>
+                                <h2>Sakarias Armchair</h2>
+                                <p class="text-sm text-[#F6B76F]">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </p>
+                            </div>
+
+
+                            <div class="flex mt-7">
+                                <h3> $369 </h3>
+                                <span class="w-[22px] h-[22px] rounded-full bg-black text-primery
+                                     flex justify-center items-center cursor-pointer ml-[60%] ">+</span>
+                            </div>
+
+
+                        </div>
+
+
+                    </div>
+
+                    <div class="w-[200px] Card ">
+
+                        <div class="w-[200px] h-[250px] 
+                                        bg-[url(imgs/chairs/2.png)] bg-contain bg-no-repeat">
+
+                        </div>
+
+
+                        <div class="p-5 bg-[#FFFFFF] rounded-b-lg">
+
+                            <div>
+                                <p class="opacity-50">chair</p>
+                                <h2>Baltsar Chair</h2>
+                                <p class="text-sm text-[#F6B76F]">
+
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </p>
+                            </div>
+
+
+                            <div class="flex mt-7">
+                                <h3> $299 </h3>
+                                <span class="w-[22px] h-[22px] rounded-full bg-black text-primery
+                                     flex justify-center items-center cursor-pointer ml-[60%] ">+</span>
+                            </div>
+
+
+                        </div>
+
+
+                    </div>
+
+
+                    <div class="w-[200px] Card ">
+
+                        <div class="w-[200px] h-[250px] 
+                                        bg-[url(imgs/chairs/3.png)] bg-contain bg-no-repeat">
+
+                        </div>
+
+
+                        <div class="p-5 bg-[#FFFFFF] rounded-b-lg">
+
+                            <div>
+                                <p class="opacity-50">chair</p>
+                                <h2>Sakarias Armchair</h2>
+                                <p class="text-sm text-[#F6B76F]"> <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </p>
+                            </div>
+
+
+                            <div class="flex mt-7">
+                                <h3> $369 </h3>
+                                <span class="w-[22px] h-[22px] rounded-full bg-black text-primery
+                                     flex justify-center items-center cursor-pointer ml-[60%] ">+</span>
+                            </div>
+
+
+                        </div>
+
+
+                    </div>
+
+                    <div class="w-[200px] Card ">
+
+                        <div class="w-[200px] h-[250px] 
+                                        bg-[url(imgs/chairs/4.png)] bg-contain bg-no-repeat">
+
+                        </div>
+
+
+                        <div class="p-5 bg-[#FFFFFF] rounded-b-lg">
+
+                            <div>
+                                <p class="opacity-50">chair</p>
+                                <h2>Sakarias Armchair</h2>
+                                <p class="text-sm text-[#F6B76F]"> <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </p>
+                            </div>
+
+
+                            <div class="flex mt-7">
+                                <h3> $369 </h3>
+                                <span class="w-[22px] h-[22px] rounded-full bg-black text-primery
+                                     flex justify-center items-center cursor-pointer ml-[60%] ml-[60%]">+</span>
+                            </div>
+
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="swiper-slide">
+
+                    <div class="w-[200px] Card ">
+
+                        <div class="w-[200px] h-[250px] 
+                                        bg-[url(imgs/chairs/1.png)] bg-contain bg-no-repeat">
+
+                        </div>
+
+
+                        <div class="p-5 bg-[#FFFFFF] rounded-b-lg">
+
+                            <div>
+                                <p class="opacity-50">chair</p>
+                                <h2>Sakarias Armchair</h2>
+                                <p class="text-sm text-[#F6B76F]">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </p>
+                            </div>
+
+
+                            <div class="flex mt-7">
+                                <h3> $369 </h3>
+                                <span class="w-[22px] h-[22px] rounded-full bg-black text-primery
+                                     flex justify-center items-center cursor-pointer ml-[60%] ">+</span>
+                            </div>
+
+
+                        </div>
+
+
+                    </div>
+
+                    <div class="w-[200px] Card ">
+
+                        <div class="w-[200px] h-[250px] 
+                                        bg-[url(imgs/chairs/2.png)] bg-contain bg-no-repeat">
+
+                        </div>
+
+
+                        <div class="p-5 bg-[#FFFFFF] rounded-b-lg">
+
+                            <div>
+                                <p class="opacity-50">chair</p>
+                                <h2>Baltsar Chair</h2>
+                                <p class="text-sm text-[#F6B76F]">
+
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </p>
+                            </div>
+
+
+                            <div class="flex mt-7">
+                                <h3> $299 </h3>
+                                <span class="w-[22px] h-[22px] rounded-full bg-black text-primery
+                                     flex justify-center items-center cursor-pointer ml-[60%] ">+</span>
+                            </div>
+
+
+                        </div>
+
+
+                    </div>
+
+
+                    <div class="w-[200px] Card ">
+
+                        <div class="w-[200px] h-[250px] 
+                                        bg-[url(imgs/chairs/3.png)] bg-contain bg-no-repeat">
+
+                        </div>
+
+
+                        <div class="p-5 bg-[#FFFFFF] rounded-b-lg">
+
+                            <div>
+                                <p class="opacity-50">chair</p>
+                                <h2>Sakarias Armchair</h2>
+                                <p class="text-sm text-[#F6B76F]"> <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </p>
+                            </div>
+
+
+                            <div class="flex mt-7">
+                                <h3> $369 </h3>
+                                <span class="w-[22px] h-[22px] rounded-full bg-black text-primery
+                                     flex justify-center items-center cursor-pointer ml-[60%] ">+</span>
+                            </div>
+
+
+                        </div>
+
+
+                    </div>
+
+                    <div class="w-[200px] Card ">
+
+                        <div class="w-[200px] h-[250px] 
+                                        bg-[url(imgs/chairs/4.png)] bg-contain bg-no-repeat">
+
+                        </div>
+
+
+                        <div class="p-5 bg-[#FFFFFF] rounded-b-lg">
+
+                            <div>
+                                <p class="opacity-50">chair</p>
+                                <h2>Sakarias Armchair</h2>
+                                <p class="text-sm text-[#F6B76F]"> <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </p>
+                            </div>
+
+
+                            <div class="flex mt-7">
+                                <h3> $369 </h3>
+                                <span class="w-[22px] h-[22px] rounded-full bg-black text-primery
+                                     flex justify-center items-center cursor-pointer ml-[60%] ml-[60%]">+</span>
+                            </div>
+
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+             <div class="swiper-button-prev"><i class="fas fa-arrow-left"></i></div>
+            <div class="swiper-button-next"><i class="fas fa-arrow-right"></i></div>
+            </div>
+
+
+
+            <div class="mobile-slider flex
+                        lg:hidden">
+            <div class="swiper-wrapper">
+                
+                    <div class="w-[200px] Card swiper-slide">
+
+                        <div class="w-[200px] h-[250px] 
+                                        bg-[url(imgs/chairs/1.png)] bg-contain bg-no-repeat">
+
+                        </div>
+
+
+                        <div class="p-5 bg-[#FFFFFF] rounded-b-lg">
+
+                            <div>
+                                <p class="opacity-50">chair</p>
+                                <h2>Sakarias Armchair</h2>
+                                <p class="text-sm text-[#F6B76F]">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </p>
+                            </div>
+
+
+                            <div class="flex mt-7">
+                                <h3> $369 </h3>
+                                <span class="w-[22px] h-[22px] rounded-full bg-black text-primery
+                                     flex justify-center items-center cursor-pointer ml-[60%] ">+</span>
+                            </div>
+
+
+                        </div>
+
+
+                    </div>
+
+                    <div class="w-[200px] Card swiper-slide">
+
+                        <div class="w-[200px] h-[250px] 
+                                        bg-[url(imgs/chairs/2.png)] bg-contain bg-no-repeat">
+
+                        </div>
+
+
+                        <div class="p-5 bg-[#FFFFFF] rounded-b-lg">
+
+                            <div>
+                                <p class="opacity-50">chair</p>
+                                <h2>Baltsar Chair</h2>
+                                <p class="text-sm text-[#F6B76F]">
+
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </p>
+                            </div>
+
+
+                            <div class="flex mt-7">
+                                <h3> $299 </h3>
+                                <span class="w-[22px] h-[22px] rounded-full bg-black text-primery
+                                     flex justify-center items-center cursor-pointer ml-[60%] ">+</span>
+                            </div>
+
+
+                        </div>
+
+
+                    </div>
+
+
+                    <div class="w-[200px] Card swiper-slide">
+
+                        <div class="w-[200px] h-[250px] 
+                                        bg-[url(imgs/chairs/3.png)] bg-contain bg-no-repeat">
+
+                        </div>
+
+
+                        <div class="p-5 bg-[#FFFFFF] rounded-b-lg">
+
+                            <div>
+                                <p class="opacity-50">chair</p>
+                                <h2>Sakarias Armchair</h2>
+                                <p class="text-sm text-[#F6B76F]"> <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </p>
+                            </div>
+
+
+                            <div class="flex mt-7">
+                                <h3> $369 </h3>
+                                <span class="w-[22px] h-[22px] rounded-full bg-black text-primery
+                                     flex justify-center items-center cursor-pointer ml-[60%] ">+</span>
+                            </div>
+
+
+                        </div>
+
+
+                    </div>
+
+                    <div class="w-[200px] Card swiper-slide">
+
+                        <div class="w-[200px] h-[250px] 
+                                        bg-[url(imgs/chairs/4.png)] bg-contain bg-no-repeat">
+
+                        </div>
+
+
+                        <div class="p-5 bg-[#FFFFFF] rounded-b-lg">
+
+                            <div>
+                                <p class="opacity-50">chair</p>
+                                <h2>Sakarias Armchair</h2>
+                                <p class="text-sm text-[#F6B76F]"> <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </p>
+                            </div>
+
+
+                            <div class="flex mt-7">
+                                <h3> $369 </h3>
+                                <span class="w-[22px] h-[22px] rounded-full bg-black text-primery
+                                     flex justify-center items-center cursor-pointer ml-[60%] ml-[60%]">+</span>
+                            </div>
+
+
+                        </div>
+
+
+                    </div>
+            </div>
+              <div class="swiper-button-prev"><i class="fas fa-arrow-left"></i></div>
+              <div class="swiper-button-next"><i class="fas fa-arrow-right"></i></div>
+            </div>
+
+
+           
+
+
+        </div>
+
+    </section>
+
+
+    <section class=" h-[100vh]" id="Experience">
+
+
+
+        <div class="flex mt-[10%] flex-col
+                    md:flex-row">
+
+
+
+        <div class="md:w-[50%] 
+                    w-full flex relative">
+            <img src="imgs/funiture-1.png" alt="" class="w-[80%] z-5 mt-[15vh]">
+            <div class="w-[60%] h-full bg-[#EEEEEE] absolute rounded-xl "></div>
+            <div class="w-[90%] h-[60%] bg-[#EEEEEE] absolute rounded-xl  bottom-5"></div>
+        </div>
+
+        <div class="md:w-[50%]  md:ml-0
+                    w-[90%] ml-[10%]  mt-[5%] flex flex-col gap-4">
+             <span class="text-clifford text-sm">EXPERIENCES</span>
+             <h1 class="text-3xl font-bold">We Provide You The <br> Best Experience</h1>
+             <p class="w-[70%] opacity-50">You don’t have to worry about the result because all of 
+                these interiors are made by people who are professionals
+                 in their fields with an elegant and lucurious style and
+                  with premium quality materials
+             </p>
+             <a href="" class="text-clifford">More info &#x2192</a>
+        </div>
+
+
+
+        </div>
+
+    </section>
+
     
+    <section class=" md:h-[100vh] h-auto w-full" id="Experience">
+
+
+
+        <div class="flex mt-[10%] flex-col-reverse
+                    md:flex-row">
+
+
+
+
+        <div class="md:w-[50%] 
+                    w-[90%] ml-[10%] mt-[5%] flex flex-col gap-5 ml-[5%]">
+             <span class="text-clifford text-sm">METERIALS</span>
+             <h1 class="md:text-3xl text-2xl font-bold">Very Serious <br> Materials For Making <br> furniture</h1>
+             <p class="w-[70%] opacity-50">
+                Because panto was very serious about
+                designing furniture for our environment,
+                using a very expensive and famous capital
+                but at a relatively low price
+             </p>
+             <a href="" class="text-clifford">More info &#x2192</a>
+        </div>
+
+
+        
+        <div class=" md:w-[50%] md:mt-0
+                    mt-10 w-full  flex relative">
+
+            <div class="flex flex-col justify-end">
+                 <img src="imgs/furniture-4.png" alt="">
+                 <img src="imgs/furniture-3.png" alt="">
+            </div>
+
+            <img src="imgs/furniture-2.png" alt="" class="md:w-[70%]  w-[60%] z-5 mt-[10vh]">
+           
+
+
+            <div class="w-[40%] h-[95%] bg-[#EEEEEE] absolute rounded-xl right-0 bottom-5"></div>
+        </div>
+
+
+
+        </div>
+
+    </section>
+
+    <section class="w-full  h-auto" id="testemonial">
+
+        <div class="w-full flex flex-col text-center gap-4 mt-15">
+            <a href="" class="text-clifford text-sm">TESTAMONIAL</a>
+            <h1 class="text-4xl font-bold">Our Client Reviews</h1>
+        </div>
+
+
+        <div class="w-full h-full mt-10 
+                     sm:p-[5vh] 
+                     p-0 flex justify-center gap-5 flex-wrap">
+
+            <div class="w-[300px]  h-[60vh] 
+                        flex items-end px-5 rounded-xl
+                        bg-[url(imgs/client-bg-3.png)] bg-cover bg-no-repeat">
+
+                <div class="h-[60%]  w-full flex flex-col items-center
+                            bg-[url(imgs/Union.png)] bg-contain bg-no-repeat">
+
+                            <img width="34px" src="imgs/user-1.png" alt="" class="mt-1">
+                            <h2 class="font-bold text-xl">Bang Upin</h2>
+
+                            <a class="text-[14px] opacity-50">Pedagang Asongan</a>
+
+                            <p class="text-center  p-2 text-[12px]">
+                                “Terimakasih banyak, kini ruanganku menjadi
+                                 lebih mewah dan terlihat mahal“
+                            </p>
+
+                            <p class="text-[10px] pt-2 text-clifford ">
+                                 <i class="fa-solid fa-star"></i>
+                                  <i class="fa-solid fa-star"></i>
+                                   <i class="fa-solid fa-star"></i>
+                                   <i class="fa-solid fa-star"></i>
+                                   <i class="fa-solid fa-star text-orange-200"></i>
+                            </p>
+                </div>        
+            </div> 
+
+
+              <div class="w-[300px] h-[60vh] flex items-end px-5 rounded-xl
+                        bg-[url(imgs/client-bg-2.png)] bg-cover bg-no-repeat">
+
+                <div class="h-[60%] w-full flex flex-col items-center
+                            bg-[url(imgs/Union.png)] bg-contain bg-no-repeat">
+
+                            <img width="34px" src="imgs/user-2.png" alt="" class="mt-1">
+                            <h2 class="font-bold text-xl">Bang Upin</h2>
+
+                            <a class="text-[14px] opacity-50">Pedagang Asongan</a>
+
+                            <p class="text-center  p-2 text-[12px]">
+                                “Terimakasih banyak, kini ruanganku menjadi
+                                 lebih mewah dan terlihat mahal“
+                            </p>
+
+                            <p class="text-[10px] pt-2 text-clifford ">
+                                 <i class="fa-solid fa-star"></i>
+                                  <i class="fa-solid fa-star"></i>
+                                   <i class="fa-solid fa-star"></i>
+                                   <i class="fa-solid fa-star"></i>
+                                   <i class="fa-solid fa-star text-orange-200"></i>
+                            </p>
+                </div>        
+            </div>
+
+
+              <div class="w-[300px] h-[60vh] flex items-end px-5 rounded-xl
+                        bg-[url(imgs/client-bg-1.png)] bg-cover bg-no-repeat">
+
+                <div class="h-[60%] w-full flex flex-col items-center
+                            bg-[url(imgs/Union.png)] bg-contain bg-no-repeat">
+
+                            <img width="34px" src="imgs/user-3.png" alt="" class="mt-1">
+                            <h2 class="font-bold text-xl">Bang Upin</h2>
+
+                            <a class="text-[14px] opacity-50">Pedagang Asongan</a>
+
+                            <p class="text-center  p-2 text-[12px]">
+                                “Terimakasih banyak, kini ruanganku menjadi
+                                 lebih mewah dan terlihat mahal“
+                            </p>
+
+                            <p class="text-[10px] pt-2 text-clifford ">
+                                 <i class="fa-solid fa-star"></i>
+                                  <i class="fa-solid fa-star"></i>
+                                   <i class="fa-solid fa-star"></i>
+                                   <i class="fa-solid fa-star"></i>
+                                   <i class="fa-solid fa-star text-orange-200"></i>
+                            </p>
+                </div>        
+            </div>
+
+
+           
+
+
+        </div>
+
+    </section>
+
+
+    <footer class="md:h-[60vh] h-auto bg-[#F7F7F7] mt-[30vh] px-15 md:px-30">
+
+
+        <div class="py-20 flex md:justify-between gap-10 flex-wrap">
+
+            <div class="md:w-[20%] w-full">
+                <h2 class="font-bold">Panto</h2>
+                <p class=" text-[12px] mt-7">The advantage of hiring a workspace with us is
+                     that givees you comfortable service and all-around facilities.
+                </p>
+            </div>
+
+            <div class="flex flex-col gap-2">
+                <a href="" class="text-clifford ">Service</a>
+                <a href="" class="text-sm">Email Marketing</a>
+                <a href="" class="text-sm">Compaings</a>
+                <a href="" class="text-sm">Branding</a>
+            </div>
+
+            <div class="flex flex-col gap-2">
+                <a href="" class="text-clifford ">Furnitures</a>
+                <a href="" class="text-sm">Chairs</a>
+                <a href="" class="text-sm">Beds</a>
+                <a href="" class="text-sm">All</a>
+            </div>
+
+
+            <div class="flex flex-col gap-2">
+                <a href="" class="text-clifford ">Follow Us</a>
+                <a href="" class="text-sm">Email Marketing</a>
+                <a href="" class="text-sm">Compaings</a>
+                <a href="" class="text-sm">Branding</a>
+            </div>
+        </div>
+       
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
 </body>
+
 </html>

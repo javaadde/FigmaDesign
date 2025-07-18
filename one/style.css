@@ -55,7 +55,8 @@
 }
 
 
-/* 
+
 #blur{
     background-image: url(Rectangle.png);
-} */
+    /* opacity: 0.05; */
+}

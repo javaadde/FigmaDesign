@@ -24,10 +24,10 @@
 <body class="bg-primery  relative">
 
 
-  <!-- <div id="blur" class="w-[100%] h-full absolute"></div> -->
+  <!-- <div id="blur" class="w-[100%] h-full absolute z-[-]"></div> -->
    
 
-  <section class="" id="home">
+  <section class="h-auto" id="home">
 
     <header class=" w-[100%] flex md:h-12 md:flex-row md:items-center relative     items-start  flex-col ">
 
@@ -38,18 +38,29 @@
 
 
     <nav class="w-[70%]" >
-      <ul id="list" class="w-[100%] hidden  gap-4   flex-col md:flex-row md:px-5 py-8 md:py-0 md:flex">
-        <li class=""><a href="">Home</a></li>
-        <li><a href="#about">About Us</a></li>
-        <li><a href="#faq">Princing</a></li>
-        <li><a href="#features">Features</a></li>
+      <ul id="list" 
+          class="w-[70%] hidden gap-4 fixed backdrop-blur-xl shadow-xl/20  rounded flex-col z-99 border
+          md:flex-row md:px-5 py-8 md:py-0 md:flex md:static md:backdrop-blur-0 md:border-0 md:shadow-[0]">
+
+          <li class="ml-5 mb-10 md:hidden">
+              <i id="close-btn" 
+                 class="fa-solid fa-square-xmark text-[20px] cursor-pointer invisible absolute" 
+                 onclick="navClose()">
+             </i>
+          </li>
+
+
+
+          <li class="ml-5"><a href="">Home</a></li>
+          <li class="ml-5 whitespace-nowrap"><a href="#about">About Us</a></li>
+          <li class="ml-5"><a href="#faq">Princing</a></li>
+          <li class="ml-5"><a href="#features">Features</a></li>
       </ul>
     </nav>
 
 
     <div class="absolute right-0 md:hidden relative" >
         <i id="open-btn" class="fa-solid fa-bars text-[20px] cursor-pointer visible absolute" onclick="navOpen() " ></i>
-         <i id="close-btn" class="fa-solid fa-square-xmark text-[20px] cursor-pointer invisible absolute" onclick="navClose()"></i>
     </div>
 
 
@@ -96,9 +107,9 @@
     
 
 
-    <div class="md:h-auto h-100 hidden lg:flex">
+    <div class="md:h-auto mt-10 xl:ml-30 h-100 hidden lg:flex">
 
-      <img src="../images/drop-lines.png" class="w-100 ml-0 md:ml-10 absolute z-0" alt="">
+      <img src="../images/drop-lines.png" class="w-100 ml-0 lg:ml-10 absolute z-0" alt="">
 
       <div class=" absolute md:w-1/7 w-1/4 rotate-352 mt-5 ml-5 z-5">
           <img src="../images/phone-none-rotate.png" alt="">
@@ -264,9 +275,9 @@
       </div>
 
 
-      <div class="md:w-[50%] flex flex-col gap-4 md:m-auto mt-12">
+      <div class="md:w-[50%] flex flex-col gap-4 md:m-auto">
 
-        <h1 class="md:text-2xl text-xl">The Best Financial Accounting <br> App Ever!</h1>
+        <h1 class="md:text-2xl text-xl mt-10">The Best Financial Accounting <br> App Ever!</h1>
 
         <p class="opacity-50">
           “Arcu at dictum sapien, mollis. Vulputate sit id accumsan, 
@@ -306,15 +317,15 @@
 
       <div class="rounded bg-orange p-5 w-[47%]">
         <h2 class="text-primery">The Best Financial Accounting <br>  App Ever!</h2>
-        <p>
+        <p class="">
           “Arcu at dictum sapien, mollis. Vulputate sit id accumsan,
            ultricies. In ultrices malesuada elit mauris.
         </p>
       </div>
 
       <div class="rounded p-5 w-[47%]">
-        <h2 class="text-primery">The Best Financial Accounting <br>  App Ever!</h2>
-        <p>
+        <h2 class="">The Best Financial Accounting <br>  App Ever!</h2>
+        <p class="opacity-90">
           “Arcu at dictum sapien, mollis. Vulputate sit id accumsan,
            ultricies. In ultrices malesuada elit mauris.
         </p>
@@ -362,7 +373,7 @@
       <section class="h-[20vh]"></section>
 
 
-  <section class="flex items-center" id="download">
+  <section class="md:flex hidden items-center" id="download">
 
     <div class="h-[70%] w-full rounded bg-black
 
@@ -384,6 +395,84 @@
   </section>
 
 
+
+  
+  <section class=" md:hidden flex items-center" id="download">
+
+    <div class="h-[70%] w-full rounded bg-black
+
+    bg-[url(imgs/bleft.png),url(imgs/tright.png)] 
+    bg-no-repeat
+    bg-[position:left_bottom,_right_top]
+    bg-[length:212px,_130px]">
+
+         <div class="flex flex-col gap-2 pl-[5%] py-[10%]">
+         <h1 class="text-primery text-2xl">Redy To Get Started?</h1>
+         <p class="text-primery text-[12px] font-thin opacity-70">Risus habitant leo egestas mauris diam eget morbi tempus <br> vulputate.</p>
+
+         <button class=" cursor-pointer py-4 bg-primery rounded flex text-center items-center justify-center w-[48vw]"> Download &nbsp; &nbsp; <img width="16px" src="imgs/Vector.png" alt=""></button>
+
+         </div>
+
+    </div>
+
+  </section>
+
+
+  <section class="w-full lg:h-[80vh] h-[30vh] mt-[20vh] " id="footer">
+
+    <div class="w-full h-[70%] lg:flex flex-row gap-18 hidden">
+
+      <div class=" flex flex-col gap-4">
+        <h2 class="text-3xl font-bold flex"> <img width="22px" src="imgs/fry.png" alt="">&nbsp; ui fry</h2>
+        <a href="" class="flex"> <img width="24px" src="imgs/mail.png" alt="">&nbsp; help@uifry.com</a>
+        <a href="" class="flex"> <img src="imgs/phone.png" width="19px" alt=""> +112837572348</a>
+      </div>
+
+      <div class=" flex flex-col gap-4">
+        <h2 class="text-3xl font-bold">Links</h2>
+        <a href="">Home</a>
+        <a href="">About Us</a>
+        <a href="">Booking</a>
+        <a href="">Blog</a>
+      </div>
+
+
+       <div class=" flex flex-col gap-4">
+        <h2 class="text-3xl font-bold">Legal</h2>
+        <a href="">Terms Of Use</a>
+        <a href="">Privecy Policy</a>
+        <a href="">Cookie Policy</a>
+      </div>
+
+
+
+        <div class=" flex flex-col gap-4">
+        <h2 class="text-3xl font-bold">Product</h2>
+        <a href="">Take Tour</a>
+        <a href="">Live Chat</a>
+        <a href="">Reveiwa</a>
+      </div>
+
+
+      <div class=" flex flex-col gap-4">
+        <h2 class="text-3xl font-bold">Newsletter</h2>
+        <a href="">Say Up To Date</a>
+      
+      </div>
+
+
+      
+
+    </div>
+
+
+
+    <footer class="h-[25vh] border-t-[1px] flex items-center justify-center">
+        <a href="">Copyright 2022 uifry.com all rights reserved</a>
+    </footer>
+
+  </section>
 
   <script src="script.js"></script>
 
