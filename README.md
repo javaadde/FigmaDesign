@@ -5,8 +5,7 @@
 
 # First Design  
 
-![alt text](images/d-1.png)
-
+<img src="images/d-1.png" alt="design photo" style="border-radius:8px;">
 
 ## [View ↗️](https://javaadde.github.io/FigmaDesign/one/design.html)
 
@@ -17,7 +16,8 @@
 
 # Second Design
 
-![alt text](images/d-2.png)
+
+<img src="images/d-2.png" alt="design photo" style="border-radius:8px;">
 
 ## [View ↗️](https://javaadde.github.io/FigmaDesign/two/design.html)
 
